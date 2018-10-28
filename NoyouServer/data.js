@@ -3,7 +3,7 @@ const firestore = require('@google-cloud/firestore')
 
 const db = new firestore({
   projectId: '<YOUR PROJECT ID>',
-  keyFilename: '<YOUR KEYFILE',
+  keyFilename: '<YOUR KEYFILE>',
 });
 
 function createUser(name, callback) {

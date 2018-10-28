@@ -14,6 +14,7 @@ io.on('connection', function(socket){
     dataFunctions.getUsers(response => socket.emit('send users', response));
   })
 
+  // req keys: name
   socket.on('create user', function (req) {
     dataFunctions.createUser(req.name, response => io.emit('add user', response))
   })
