@@ -28,7 +28,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    this.socket = io('https://noyouserver-snmnutakjv.now.sh/');
+    this.socket = io('<YOUR SERVER URL>');
   }
 
   componentDidMount() {
@@ -41,7 +41,7 @@ export default class App extends Component {
 
   _handleAppStateChange = (nextAppState) => {
     if (this.state.appState.match(/inactive|background/) && nextAppState === 'active') {
-      this.socket = io('https://noyouserver-snmnutakjv.now.sh/');
+      this.socket = io('<YOUR SERVER URL>');
     }
     this.setState({appState: nextAppState});
   }
