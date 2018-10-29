@@ -8,6 +8,8 @@ Please note that this is passion/practice project that I made for my girlfriend 
 
 <img src= "./readme_img/screenshots.png" alt="App Screenshots"/>
 
+
+
 ## Server
 
 The Node server consists of two files.
